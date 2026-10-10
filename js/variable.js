@@ -24,3 +24,8 @@ var a=200;
 var b=12.5;
 console.log(typeof a);
 console.log(typeof b);
+var c=1.2323232323;
+console.log(c);
+console.log(c.toFixed(2));
+var d=a+b+c;
+console.log(d.toFixed(4));
