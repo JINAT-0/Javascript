@@ -19,3 +19,8 @@ var teacher=false;
 console.log(typeof student);
 console.log( student);
 console.log(teacher);
+
+var a=200;
+var b=12.5;
+console.log(typeof a);
+console.log(typeof b);
