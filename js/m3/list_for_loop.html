@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the condition for executing the code block</h1>
+    <h5>exp 1 is executed (one time) before the execution of the code block</h5>
+    <p id="ren"></p>
+    <script>
+        let name=['ren','pen','ken','ten','ben']
+        let text="";
+        let len=name.length;
+        for(let i=2;i<len;i++){
+            text+="the names are :  "+name[i]+"<br>";
+            document.getElementById("ren").innerHTML=text;
+        }
+
+    </script>
+</body>
+</html>
