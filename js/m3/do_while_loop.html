@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The do while runs at least once</h1>
+    <h5>This is because the code block is executed before the condition is tested:</h5>
+    <p id="ren"></p>
+    <script>
+        text="";
+        let i=0;
+        do{
+            text+="the num is :"+i+"<br>";
+            i++
+        }
+        while(i<=10);
+        document.getElementById("ren").innerHTML=text;
+    </script>
+</body>
+</html>
