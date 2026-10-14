@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ren"></p>
+    <script>
+       let taka_has=200;
+       let have_guardian=false;
+       let age=11;
+       let text="enter ?";
+       let text1="";
+
+       if (age > 12 ||(age <= 12 && have_guardian===true) ){
+           text="can enter the park";
+           if (age>=18 && taka_has>= 200) {
+               text1="can have lunch and can get three ride" ;   
+            }
+            else if (age>=18 && taka_has>200){
+               text1="can have lunch and can get one ride";
+
+            }
+            else{
+                text1="you can have only lunch";
+
+            }
+        }
+        else{
+            text="cannot enter the park";
+        }
+    document.getElementById("ren").innerHTML=text+ "<br>"+text1;
+    </script>
+</body>
+</html>
