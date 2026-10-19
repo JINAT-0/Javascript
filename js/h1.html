@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1>JavaScript Functions</h1>
+    <p id="ren"></p>
+    <script> 
+    function greet(){
+        return "hello everyone";
+    }
+    function isEven(a){
+        if (a%2==0){
+            return "is even";
+
+        }
+        else{
+            return "is not even";
+        }
+        
+
+    }
+    function addtext(a,b){
+        return a+ " "+b
+
+    }
+    function cap(a){
+        return a.toUpperCase()
+    }
+    function f(a){
+        return (a*9/5)+32;
+    }
+    let a=greet();
+    let b=isEven(6);
+    let c=addtext("ferdusi","jannat");
+    let d=cap("ferdusi");
+    let e=f(25);
+
+         document.getElementById("ren").innerHTML=a+"<br>"+b+"<br>"+c+"<br>"+d+"<br>"+e;
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The toString() Method</h1>
+    <p>All number methods can be used on any type of numbers (literals, variables, or expressions):</p>
+    <p id="ren"></p>
+    <script>
+        let a=7;
+        let j=1.23;
+        let b=a.toFixed(2);
+        let c=a.toString(2);
+        let d=j.toPrecision(2)
+        document.getElementById("ren").innerHTML=b+"<br>"+c+"<br>"+d;
+    </script>
+</body>
+</html>
