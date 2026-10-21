@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Creating an Array</h1>
+    <p id="ren"></p>
+    <p id="ren1"></p>
+    <p id="ren2"></p>
+    <p id="ren3"></p>
+    <p id="ren4"></p>
+    <p id="ren5"></p>
+    <p id="ren6"></p>
+    <p id="ren7"></p>
+    <p id="ren8"></p>
+    <script>
+        const cars=["saab","volvo","BMW"];
+        document.getElementById("ren").innerHTML=cars;
+        // for 1st creating empty list of array
+        const id=[];
+        id[0]=10;
+        id[1]=11;
+        id[2]=12;
+        id[3]=13;
+        id[4]=14;
+        id[5]=15;
+        document.getElementById("ren1").innerHTML=id;
+        // inseart new element in existing list
+        const carss=["saab1","volvo2","BMW3"];
+        carss[0]="audie";
+         document.getElementById("ren2").innerHTML=carss.length;
+         const fruits = ["Banana", "Orange", "Apple", "Mango"];
+         document.getElementById("ren3").innerHTML = fruits[(fruits.length)-(fruits.length-1)];
+        //  push and pop
+     const f=["apple","banana","mango"]    ;
+     f.pop();
+     f.push("orange");
+     document.getElementById("ren4").innerHTML=f;
+    //  includes
+     document.getElementById("ren4").innerHTML=f.includes("apple");
+     const n=[2,5,1,7,9,4,0];
+     document.getElementById("ren5").innerHTML=n.sort();
+     const m=[2,5,1,7,9,4,0];
+    //  document.getElementById("ren6").innerHTML=n.forEach();
+     document.getElementById("ren7").innerHTML=n.reverse();
+    const o=[2,5,1,7,9,4,0];
+    let cc="";
+    o.forEach(mf);
+    document.getElementById("ren8").innerHTML=cc;
+    function mf(value,index,array){
+        cc+=value +"<br>";
+
+    }
+
+
+    </script>
+</body>
+</html>
