@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./h.css">
+    <title>m8-hw</title>
+</head>
+<body>
+    <div class="grid grid-cols-3">
+        <div class=" w-70 p-10 m-10 grid justify-center items-center gap-5 border ">
+            <h1 class="text-2xl text-blue-950 font-bold text-center">HTML DOM</h1>
+            <p class="w-40 h-40 bg-amber-800 border-2 flex justify-center">.</p>
+            <p id="ren">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, maxime!</p>
+            <div class="flex gap-10">
+                <button type="button" onclick='document.getElementById("ren").innerHTML="hello bangladesh"' class="w-20 border bg-amber-200">in</button>
+                <button  type="button" onclick='document.getElementById("ren").innerHTML="hello-world"'  class="w-20 border bg-amber-200">out</button>
+            </div>
+        </div>
+        <div class=" w-70 p-10 m-10 grid justify-center items-center gap-5 border ">
+            <h1 class="text-2xl text-blue-950 font-bold text-center">HTML DOM</h1>
+            <p class="w-40 h-40 bg-amber-800 border-2 ">.</p>
+            <p class="demo"></p>
+            <div class="flex gap-10">
+                <button class="w-20 border bg-amber-200">in</button>
+                <button class="w-20 border bg-amber-200">out</button>
+            </div>
+        </div>
+        <div class=" w-70 p-10 m-10 grid justify-center items-center gap-5 border ">
+            <h1 class="text-2xl text-blue-950 font-bold text-center">HTML DOM</h1>
+            <p class="w-40 h-40 bg-amber-800 border-2 ">.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, maxime!</p>
+            <div class="flex gap-10">
+                <button class="w-20 border bg-amber-200">in</button>
+                <button class="w-20 border bg-amber-200">out</button>
+            </div>
+        </div>
+        <div class=" w-70 p-10 m-10 grid justify-center items-center gap-5 border ">
+            <h1 class="text-2xl text-blue-950 font-bold text-center">HTML DOM</h1>
+            <p class="w-40 h-40 bg-amber-800 border-2 ">.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, maxime!</p>
+            <div class="flex gap-10">
+                <button id="btn" class="w-20 border bg-amber-200">in</button>
+                <button id="btn1"  class="w-20 border bg-amber-200">out</button>
+            </div>
+        </div>
+        <div class=" w-70 p-10 m-10 grid justify-center items-center gap-5 border ">
+            <h1 class="text-2xl text-blue-950 font-bold text-center">HTML DOM</h1>
+            <p class="w-40 h-40 bg-amber-800 border-2 ">.</p>
+            <p id="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, maxime!</p>
+            <div class="flex gap-10">
+                <button class="w-20 border bg-amber-200">in</button>
+                <button class="w-20 border bg-amber-200">out</button>
+            </div>
+        </div>
+        <div class=" w-70 p-10 m-10 grid justify-center items-center gap-5 border ">
+            <h1 class="text-2xl text-blue-950 font-bold text-center">HTML DOM</h1>
+            <p class="w-40 h-40 bg-amber-800 border-2 ">.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, maxime!</p>
+            <div class="flex gap-10">
+                <button class="w-20 border bg-amber-200">in</button>
+                <button class="w-20 border bg-amber-200">out</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementsByClassName("demo")[0].innerHTML="this is jinat";
+        document.querySelectorAll("p")[5].innerHTML="hey";
+    
+        document.querySelector("#abc").textContent="hey there, long time no see";
+        document.getElementById("btn").style.background="gray";
+    
+        document.getElementById("btn1").style.background="gray";
+    </script>
+</body>
+</html>
