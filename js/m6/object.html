@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <p id="ren"></p>
+  
+    <p id="ren1"></p>
+    <p id="ren2"></p>
+    <p id="ren3"></p>
+    <p id="ren4"></p>
+    <script>
+        const car={
+            type:"fial",
+            model:"500",
+            color:"white"
+
+        };
+        document.getElementById
+        ("ren").innerHTML="the car type is "+car.model;
+        const person={
+            first_name:"ali",
+            last_name:"hamza",
+            age:26,
+            eye_color:"black"
+
+        };
+         document.getElementById
+        ("ren1").innerHTML=person.first_name+" is "+person.age+" years old";
+        const person1= new Object({
+            first_name:"ali",
+            last_name:"hamza",
+            age:26,
+            eye_color:"black"
+
+        });
+         document.getElementById
+        ("ren2").innerHTML=person1.first_name+" is "+person1.age+" years old";
+
+    </script>
+</body>
+</html>

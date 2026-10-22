@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Finding HTML Elements by Tag Name.</p>
+    <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+    <p id="demo"></p>
+    <p id="ren"></p>
+    <script>
+        const a=document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML="the 1st list of p :"+a[0].innerHTML;
+     
+        document.getElementById("ren").innerHTML="the 2st list of p :"+a[1].innerHTML;
+
+    </script>
+</body>
+</html>

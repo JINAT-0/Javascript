@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <p id="ren"></p>
+    <script>
+        const student={
+            first_name:"jinat",
+            last_name:"onni" ,
+            age:22,
+            name:function(){
+                return this.first_name.toUpperCase()+"  "+this.last_name .toUpperCase();
+            } 
+
+        };
+        document.getElementById("ren").innerHTML=student.name();
+    </script>
+</body>
+</html>

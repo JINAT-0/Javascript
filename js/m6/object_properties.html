@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Accessing JavaScript Properties</h1>
+        <p id="ren"></p>
+        <script>
+            const car={
+                name:"farari",
+                model:"old",
+                no:27
+            };
+            delete car.no;
+            car.no="17"
+            car.mic="pip_pip"
+            // object name.property
+            let n1=car.name;
+            let n2=car.model;
+            let n3=car.no;
+            let res=("n1" in car)
+            document.getElementById("ren").innerHTML=n1+n2+n3+" "+car.mic+"<br>"+res;
+        </script>
+</body>
+</html>
