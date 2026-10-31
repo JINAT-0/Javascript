@@ -26,3 +26,4 @@ a.addEventListener('click',function(){
 container.addEventListener('click',function(){
    bbt ("this is div");
 });
+// even part of js
